@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html ng-app="movieApp">
+<head>
+	<title>Movie App Angular Exercise</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+	<script type="text/javascript" src="js/movieapp.js"></script>
+
+
+
+</head>
+<body ng-controller="movieController">
+	
+	<div class="col-sm-2 movie-poster" ng-repeat="movie in movieData">
+		<img ng-src='{{imagePath}}{{movie.poster_path}}'>
+	</div>
+
+
+</body>
+</html>
